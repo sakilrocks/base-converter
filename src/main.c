@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include "../include/conversions.h"
+#include "../include/arithmetic.h"
+#include "../include/bitwise.h"
 
 int main() {
     int choice;
@@ -88,7 +90,7 @@ int main() {
             case 15:
                 rightShift();
                 break;
-                
+
             case 0:
                 printf("exiting...\n");
                 break;
