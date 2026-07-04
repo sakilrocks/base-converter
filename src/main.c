@@ -2,6 +2,7 @@
 #include "../include/conversions.h"
 #include "../include/arithmetic.h"
 #include "../include/bitwise.h"
+#include "../include/complements.h"
 
 int main() {
     int choice;
@@ -24,6 +25,11 @@ int main() {
         printf("13. bitwise NOT\n");
         printf("14. left shift\n");
         printf("15. right shift\n");
+        printf("16. 1's Complement\n");
+        printf("17. 2's Complement\n");
+        printf("18. signed magnitude representation\n");
+        printf("19. one's complement representation\n");
+        printf("20. two's complement representation\n");
         printf("0. exit\n");
         printf("---------------------------------\n");
         printf("enter choice: ");
@@ -91,6 +97,26 @@ int main() {
                 rightShift();
                 break;
 
+            case 16:
+                onesComplement();
+                break;
+
+            case 17:
+                twosComplement();
+                break;
+
+            case 18:
+                signedMagnitude();
+                break;
+
+            case 19:
+                onesComplementRepresentation();
+                break;
+
+            case 20:
+                twosComplementRepresentation();
+                break;
+                
             case 0:
                 printf("exiting...\n");
                 break;
