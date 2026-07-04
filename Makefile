@@ -7,7 +7,8 @@ TARGET=toolkit
 SRC=src/main.c \
     src/conversions.c \
     src/arithmetic.c \
-    src/bitwise.c
+    src/bitwise.c \
+	src/complements.c
 
 all:
 	$(CC) $(CFLAGS) $(SRC) -o $(TARGET)
