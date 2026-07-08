@@ -69,13 +69,85 @@ void signedMagnitude(void)
 
 void onesComplementRepresentation(void)
 {
-    printf("------ 1's Complement Representation ------\n");
+    int number;
+    unsigned char binary[8];
+
+    printf("Enter a decimal number: ");
+    scanf("%d", &number);
+
+    int absNum = (number < 0) ? -number : number;
+
+    /* Convert magnitude to binary */
+
+    for (int i = 7; i >= 0; i--)
+    {
+        binary[i] = absNum % 2;
+        absNum /= 2;
+    }
+
+    if (number < 0)
+    {
+        /* Invert all bits */
+        for (int i = 0; i < 8; i++)
+        {
+            binary[i] = !binary[i];
+        }
+    }
+
+    printf("1's Complement Representation: ");
+    for (int i = 0; i < 8; i++)
+    {
+        printf("%d", binary[i]);
+    }
+
+    printf("\n");
+
 }
 
 
 void twosComplementRepresentation(void)
 {
-    printf("------ 2's Complement Representation ------\n");
+    int number;
+    unsigned char binary[8];
+
+    printf("Enter a decimal number: ");
+    scanf("%d", &number);
+
+    int absNum = (number < 0) ? -number : number;
+
+    /* Convert magnitude to binary */
+    for (int i = 7; i >= 0; i--)
+    {
+        binary[i] = absNum % 2;
+        absNum /= 2;
+    }
+
+    if (number < 0)
+    {
+        /* Invert bits */
+        for (int i = 0; i < 8; i++)
+        {
+            binary[i] = !binary[i];
+        }
+        /* Add 1 */
+
+        int carry = 1;
+        for (int i = 7; i >= 0; i--)
+        {
+            int sum = binary[i] + carry;
+            binary[i] = sum % 2;
+            carry = sum / 2;
+        }
+    }
+    printf("2's Complement Representation: ");
+
+    for (int i = 0; i < 8; i++)
+    {
+        printf("%d", binary[i]);
+    }
+
+    printf("\n");
+
 }
 
 
