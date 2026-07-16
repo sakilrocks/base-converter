@@ -3,6 +3,8 @@
 #include "../include/arithmetic.h"
 #include "../include/bitwise.h"
 #include "../include/complements.h"
+#include "../include/graycode.h"
+#include "../include/bcd.h"
 
 int main() {
     int choice;

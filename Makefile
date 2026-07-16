@@ -10,7 +10,8 @@ SRC=src/main.c \
     src/bitwise.c \
 	src/complements.c \
 	src/bcd.c \
-	src/graycode.c
+	src/graycode.c \
+	src/utils.c
 
 all:
 	$(CC) $(CFLAGS) $(SRC) -o $(TARGET)
