@@ -8,7 +8,9 @@ SRC=src/main.c \
     src/conversions.c \
     src/arithmetic.c \
     src/bitwise.c \
-	src/complements.c
+	src/complements.c \
+	src/bcd.c \
+	src/graycode.c
 
 all:
 	$(CC) $(CFLAGS) $(SRC) -o $(TARGET)

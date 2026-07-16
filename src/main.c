@@ -30,6 +30,10 @@ int main() {
         printf("18. signed magnitude representation\n");
         printf("19. one's complement representation\n");
         printf("20. two's complement representation\n");
+        printf("21. binary -> gray code\n");
+        printf("22. gray code -> binary\n");
+        printf("23. decimal -> BCD\n");
+        printf("24. BCD -> decimal\n");
         printf("0. exit\n");
         printf("---------------------------------\n");
         printf("enter choice: ");
@@ -116,6 +120,22 @@ int main() {
             case 20:
                 twosComplementRepresentation();
                 break;
+
+            case 21:
+                binaryToGray();
+                break;
+                
+            case 22:
+                grayToBinary();
+                break;
+                
+            case 23:
+                decimalToBCD();
+                break;
+                
+            case 24:
+                BCDToDecimal();
+                break;    
                 
             case 0:
                 printf("exiting...\n");
