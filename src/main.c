@@ -5,6 +5,7 @@
 #include "../include/complements.h"
 #include "../include/graycode.h"
 #include "../include/bcd.h"
+#include "../include/ieee754.h"
 
 int main() {
     int choice;
@@ -36,6 +37,7 @@ int main() {
         printf("22. gray code -> binary\n");
         printf("23. decimal -> BCD\n");
         printf("24. BCD -> decimal\n");
+        printf("25. decimal -> IEEE 754\n");
         printf("0. exit\n");
         printf("---------------------------------\n");
         printf("enter choice: ");
@@ -137,8 +139,12 @@ int main() {
                 
             case 24:
                 BCDToDecimal();
-                break;    
-                
+                break;
+
+            case 25:
+                decimalToIEEE754();
+                break;
+
             case 0:
                 printf("exiting...\n");
                 break;

@@ -11,7 +11,8 @@ SRC=src/main.c \
 	src/complements.c \
 	src/bcd.c \
 	src/graycode.c \
-	src/utils.c
+	src/utils.c \
+	src/ieee754.c
 
 all:
 	$(CC) $(CFLAGS) $(SRC) -o $(TARGET)
