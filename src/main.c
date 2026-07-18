@@ -39,6 +39,7 @@ int main() {
         printf("24. BCD -> decimal\n");
         printf("25. decimal -> IEEE 754\n");
         printf("26. IEEE 754 -> decimal\n");
+        printf("27. Explain IEEE 754 Conversion\n");
         printf("0. exit\n");
         printf("---------------------------------\n");
         printf("enter choice: ");
@@ -149,6 +150,10 @@ int main() {
             case 26:
                 IEEE754ToDecimal();
                 break;
+
+            case 27:
+                explainIEEE754();
+                break;    
                     
             case 0:
                 printf("exiting...\n");

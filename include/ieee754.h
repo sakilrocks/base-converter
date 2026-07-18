@@ -3,5 +3,6 @@
 
 void decimalToIEEE754(void);
 void IEEE754ToDecimal(void);
+void explainIEEE754(void);
 
 #endif
